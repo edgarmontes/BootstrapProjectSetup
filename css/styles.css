@@ -1,37 +1,39 @@
-body{
-    font-family: "Open sans",sans-serif;
+body {
+  font-family: "Open sans", sans-serif;
 }
 
-h1,h2,h3{
-    font-family: "Lobster",cursive;
+h1,
+h2,
+h3 {
+  font-family: "Lobster", cursive;
 }
 
-h2{
-    color: #3046c5;
+h2 {
+  color: #3046c5;
 }
 
-header h2{
-    color: #cec8ff;
+header h2 {
+  color: #cec8ff;
 }
 
-footer{
-    background-image: linear-gradient(#cec8ff,white);
-    padding: 20px 0;
+.site-footer {
+  background-image: linear-gradient(#b7a8f8, white);
+  padding: 20px 0px;
 }
 
-.jumbotron{
-    margin: 0;
-    padding: 30px;
-    background-image: linear-gradient(to right, #5637dd,#3046c5,#60106b);
-    color: white;
+.jumbotron {
+  margin: 0;
+  padding: 30px;
+  background-image: linear-gradient(to right, #5637dd, #3046c5, #60106b);
+  color: white;
 }
 
-.row-content{
-    padding: 50px 0;
-    border-bottom: 1px ridge;
-    min-height: 200px;
+.row-content {
+  padding: 50px 0;
+  border-bottom: 1px ridge;
+  min-height: 200px;
 }
 
-.navbar{
-    background-color: #901cad;
+.navbar {
+  background-color: #901cad;
 }
