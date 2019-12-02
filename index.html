@@ -74,7 +74,9 @@
               <form id="reserveForm">
                 <div class="row form-group">
                   <div class="col-sm-6">
-                    <label class="col-form-label">Number of Campers</label>
+                    <label class="col-sm-6 col-form-label"
+                      >Number of Campers</label
+                    >
                   </div>
                   <div class="col">
                     <select
@@ -94,7 +96,7 @@
                 </div>
                 <div class="row form-group">
                   <div class="col-sm-6">
-                    <label class="col-form-label">Date</label>
+                    <label class="col-sm-6 col-form-label">Date</label>
                   </div>
                   <div class="col">
                     <input
@@ -107,7 +109,7 @@
                 </div>
                 <div class="row form-group">
                   <div class="col-sm-6">
-                    <label class="col-form-label">Campsite Type</label>
+                    <label class="col-sm-6 col-form-label">Campsite Type</label>
                   </div>
                   <div
                     class="col btn-group btn-group-toggle"
@@ -116,8 +118,8 @@
                     <label class="btn btn-primary active">
                       <input
                         type="radio"
-                        name="options"
-                        id="option1"
+                        name="siteType"
+                        id="siteTent"
                         autocomplete="off"
                         checked
                       />
@@ -126,8 +128,8 @@
                     <label class="btn btn-success">
                       <input
                         type="radio"
-                        name="options"
-                        id="option2"
+                        name="siteType"
+                        id="siteRV"
                         autocomplete="off"
                       />
                       RV
@@ -336,6 +338,15 @@
               <span class="carousel-control-next-icon"></span>
               <span class="sr-only">Next</span>
             </a>
+            <!--Adding jQuery button-->
+            <div class="btn-group" id="carouselButton">
+              <button class="btn btn-danger btn-sm" id="carouselPause">
+                <i class="fa fa-pause"></i>
+              </button>
+              <button class="btn btn-danger btn-sm" id="carouselPlay">
+                <i class="fa fa-play"></i>
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -487,5 +498,17 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!--Adding jQuery-->
+    <script>
+      $(function() {
+        $(".carousel").carousel({ interval: 2000 });
+        $("#carouselPause").click(function() {
+          $(".carousel").carousel("pause");
+        });
+        $("#carouselPlay").click(function() {
+          $(".carousel").carousel("cycle");
+        });
+      });
+    </script>
   </body>
 </html>
