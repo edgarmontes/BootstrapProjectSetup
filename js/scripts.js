@@ -1,3 +1,4 @@
+/*
 $(function() {
   $(".carousel").carousel({ interval: 2000 });
   $("#carouselButton").click(function() {
@@ -22,5 +23,32 @@ $(function() {
         .children("i")
         .addClass("fa-pause");
     }
+  });
+});
+*/
+
+$(function() {
+  //Jquery for Play/Pause Button
+  $(".carousel").carousel({ interval: 2000 });
+  $("#carouselButton").click(function() {
+    if ($("i").hasClass("fa-pause")) {
+      $(".carousel").carousel("pause");
+      $("i").removeClass("fa-pause");
+      $("i").addClass("fa-play");
+    } else {
+      $(".carousel").carousel("cycle");
+      $("i").removeClass("fa-play");
+      $("i").addClass("fa-pause");
+    }
+  });
+});
+
+//Week 4 workshop
+$(function() {
+  $("#reserveButton").click(function() {
+    $("#reserveModal").modal("show");
+  });
+  $("#loginButton").click(function() {
+    $("#loginModal").modal("show");
   });
 });

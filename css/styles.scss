@@ -6,6 +6,8 @@ $color-mid: #901cad;
 $color-dark: #60106b;
 $color-transparent-black: rgba(0, 0, 0, 0.5);
 $color-blue: cornflowerblue;
+//
+$color-tiel: #17a2b8;
 
 body {
   font-family: "Open sans", sans-serif;
@@ -26,9 +28,11 @@ header {
   h2 {
     color: $color-pale;
   }
+  /*
   p {
     color: $color-blue;
   }
+  */
 }
 
 .site-footer {
@@ -77,4 +81,19 @@ header {
   position: absolute;
   right: 0;
   bottom: 0;
+}
+
+//Task 3 week 4
+#reserveModal {
+  modal-header {
+    background-color: $color-tiel;
+    color: white;
+  }
+}
+
+#loginModal {
+  modal-header {
+    background-color: $color-mid;
+    color: white;
+  }
 }
