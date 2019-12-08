@@ -55,10 +55,10 @@ header {
   right: 0;
   bottom: 0; }
 
-#reserveModal modal-header {
+#reserveModal .modal-header {
   background-color: #17a2b8;
   color: white; }
 
-#loginModal modal-header {
+#loginModal .modal-header {
   background-color: #901cad;
   color: white; }
